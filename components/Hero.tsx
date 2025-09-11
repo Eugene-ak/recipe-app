@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroImage from "@/public/assets/hero-image.png";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -12,7 +13,9 @@ export default function Hero() {
         <p className="text-lg">
           Discover recipes helping you to find the easiest way to cook
         </p>
-        <Button className="w-max self-center lg:self-start">Browse Recipes</Button>
+        <Button className="w-max self-center lg:self-start" asChild>
+          <Link href="/">Browse Recipes</Link>
+        </Button>
       </div>
       <div className="flex justify-center lg:justify-end">
         <Image src={HeroImage} alt="Hero Image" className="w-[20rem] lg:w-[40rem] h-auto" />
