@@ -3,6 +3,7 @@ import { Card, CardContent, CardFooter } from "./ui/card";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Stats from "./Stats";
+// import { motion } from "motion/react";
 
 type Recipe = {
   image: string | StaticImageData;
@@ -26,6 +27,7 @@ export default function RecipeCard({
   reviewCount,
 }: Recipe) {
   return (
+    // <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
     <Card className="p-0 h-[27rem] gap-0 overflow-hidden">
       <CardContent className="p-0 h-[70%] overflow-hidden">
         <Image
@@ -52,5 +54,6 @@ export default function RecipeCard({
         </Button>
       </CardFooter>
     </Card>
+    // </motion.div>
   );
 }

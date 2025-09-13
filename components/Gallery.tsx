@@ -35,7 +35,7 @@ export default async function Gallery() {
   console.log("total Recipes:", totalRecipes);
 
   return (
-    <section className="w-full h-max px-4 md:px-8 lg:px-[10rem] xl:px-[15rem] py-20">
+    <section id="recipes" className="w-full h-max px-4 md:px-8 lg:px-[10rem] xl:px-[15rem] py-20">
       <div className="my-4 flex flex-col gap-2">
         <h1 className="text-3xl md:text-4xl lg:text-5xl">
           Discover, Create, Share

@@ -14,7 +14,7 @@ export default function Hero() {
           Discover recipes helping you to find the easiest way to cook
         </p>
         <Button className="w-max self-center lg:self-start" asChild>
-          <Link href="/">Browse Recipes</Link>
+          <Link href="#recipes">Browse Recipes</Link>
         </Button>
       </div>
       <div className="flex justify-center lg:justify-end">
