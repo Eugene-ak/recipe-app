@@ -42,7 +42,6 @@ export default function RecipeCard({
         <p className="text-xl">{name}</p>
         <div>
           <Stats
-            prepTimeMinutes={prepTimeMinutes}
             cookTimeMinutes={cookTimeMinutes}
             calories={calories}
             rating={rating}

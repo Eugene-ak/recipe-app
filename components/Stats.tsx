@@ -3,14 +3,12 @@ import { BsFire } from "react-icons/bs";
 import { IoIosStar } from "react-icons/io";
 
 export default function Stats({
-  prepTimeMinutes,
   cookTimeMinutes,
   calories,
   rating,
   reviewCount,
 }: {
   cookTimeMinutes: number;
-  prepTimeMinutes: number;
   calories: number;
   rating: number;
   reviewCount: number;
@@ -19,7 +17,7 @@ export default function Stats({
     <ul className="flex gap-6">
       <li className="flex items-center gap-1">
         <WiTime9 className="text-amber-500 text-sm" />
-        <span>{prepTimeMinutes}/{cookTimeMinutes}</span>
+        <span>{cookTimeMinutes}</span>
       </li>
       <li className="flex items-center gap-1">
         <BsFire className="text-amber-500 text-sm" />

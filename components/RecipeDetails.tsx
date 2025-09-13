@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Stats from "./Stats";
-import food from "@/public/assets/meal1.jpg";
 import { Checkbox } from "./ui/checkbox";
 import { Label } from "./ui/label";
 
@@ -8,7 +7,6 @@ type Recipe = {
   id: number;
   name: string;
   image: string;
-  prepTimeMinutes: number;
   cookTimeMinutes: number;
   caloriesPerServing: number;
   rating: number;
@@ -23,7 +21,6 @@ export default function RecipeDetails({ recipe }: { recipe: Recipe }) {
       <h1 className="text-4xl">{recipe.name}</h1>
       <Stats
         cookTimeMinutes={recipe.cookTimeMinutes}
-        prepTimeMinutes={recipe.prepTimeMinutes}
         calories={recipe.caloriesPerServing}
         reviewCount={recipe.reviewCount}
         rating={recipe.rating}

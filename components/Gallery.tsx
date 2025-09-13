@@ -15,7 +15,7 @@ type Recipe = {
 export default async function Gallery() {
   const getRecipes = async () => {
     const res = await fetch(
-      "https://dummyjson.com/recipes?limit=9&select=id,name,image,cookTimeMinutes,prepTimeMinutes,caloriesPerServing,rating,reviewCount",
+      "https://dummyjson.com/recipes?limit=9&select=id,name,image,cookTimeMinutes,caloriesPerServing,rating,reviewCount",
       {
         next: { revalidate: 60 }, // Revalidate every 60 seconds
       }
