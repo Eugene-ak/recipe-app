@@ -5,7 +5,6 @@ type Recipe = {
   id: number;
   name: string;
   image: string;
-  prepTimeMinutes: number;
   cookTimeMinutes: number;
   caloriesPerServing: number;
   rating: number;
@@ -49,7 +48,6 @@ export default async function Gallery() {
             id={recipe.id}
             name={recipe.name}
             image={recipe.image}
-            prepTimeMinutes={recipe.prepTimeMinutes}
             cookTimeMinutes={recipe.cookTimeMinutes}
             calories={recipe.caloriesPerServing}
             rating={recipe.rating}

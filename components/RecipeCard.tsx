@@ -9,7 +9,6 @@ type Recipe = {
   image: string | StaticImageData;
   name: string;
   id: number;
-  prepTimeMinutes: number;
   cookTimeMinutes: number;
   calories: number;
   rating: number;
@@ -20,7 +19,6 @@ export default function RecipeCard({
   image,
   name,
   id,
-  prepTimeMinutes,
   cookTimeMinutes,
   calories,
   rating,
