@@ -59,6 +59,7 @@ function PaginationLink({
           variant: isActive ? "outline" : "ghost",
           size,
         }),
+        (isActive ? "bg-amber-500 text-white" : ""),
         className
       )}
       {...props}

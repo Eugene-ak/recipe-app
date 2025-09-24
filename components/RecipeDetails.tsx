@@ -17,7 +17,7 @@ type Recipe = {
 
 export default function RecipeDetails({ recipe }: { recipe: Recipe }) {
   return (
-    <section className="w-full min-h-screen px-4 md:px-8 lg:px-[10rem] xl:px-[20rem] @min-3xl:px-[30rem] py-10 flex flex-col gap-4">
+    <section className="w-full min-h-screen px-4 md:px-8 lg:px-[10rem] xl:px-[20rem] 2xl:px-[30rem] py-10 flex flex-col gap-4">
       <h1 className="text-4xl">{recipe.name}</h1>
       <Stats
         cookTimeMinutes={recipe.cookTimeMinutes}
@@ -26,11 +26,11 @@ export default function RecipeDetails({ recipe }: { recipe: Recipe }) {
         rating={recipe.rating}
       />
       <hr />
-      <div className="w-full h-max xl:h-[500px] overflow-hidden rounded-lg">
+      <div className="w-full h-max xl:h-[700px] overflow-hidden rounded-lg">
         <Image
           src={recipe.image}
-          width={450}
-          height={450}
+          width={500}
+          height={500}
           alt="Food"
           className="w-full h-full object-cover aspect-square"
         />
